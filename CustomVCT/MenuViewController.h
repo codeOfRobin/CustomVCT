@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuViewController.h
 //  CustomVCT
 //
 //  Created by Robin Malhotra on 11/10/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIViewControllerTransitioningDelegate> 
-
+@interface MenuViewController : UIViewController
 
 @end
-

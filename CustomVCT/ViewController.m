@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "MenuViewController.h"
+#import "Ranimator.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor redColor]];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,4 +27,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"options"])
+    {
+        MenuViewController *vc=segue.destinationViewController;
+        vc.transitioningDelegate=self;
+        vc.modalPresentationStyle=UIModalPresentationCustom;
+    }
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    Ranimator *animator=[[Ranimator alloc]init];
+    animator.presenting=YES;
+    return animator;
+}
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    Ranimator *animator=[Ranimator new];
+    return animator;
+}
 @end

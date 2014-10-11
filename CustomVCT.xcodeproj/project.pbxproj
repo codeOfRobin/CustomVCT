@@ -15,6 +15,9 @@
 		7A099D5A19E9ACB6009581E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A099D5919E9ACB6009581E7 /* Images.xcassets */; };
 		7A099D5D19E9ACB6009581E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A099D5B19E9ACB6009581E7 /* LaunchScreen.xib */; };
 		7A099D6919E9ACB6009581E7 /* CustomVCTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A099D6819E9ACB6009581E7 /* CustomVCTTests.m */; };
+		7A099D7419E9AD9D009581E7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A099D7319E9AD9D009581E7 /* MenuViewController.m */; };
+		7A099D7719E9B85B009581E7 /* Ranimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A099D7619E9B85B009581E7 /* Ranimator.m */; };
+		7A506FAE19E9DC1200BDF95D /* DynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A506FAD19E9DC1200BDF95D /* DynamicAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		7A099D6219E9ACB6009581E7 /* CustomVCTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomVCTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A099D6719E9ACB6009581E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A099D6819E9ACB6009581E7 /* CustomVCTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomVCTTests.m; sourceTree = "<group>"; };
+		7A099D7219E9AD9D009581E7 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		7A099D7319E9AD9D009581E7 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		7A099D7519E9B85B009581E7 /* Ranimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ranimator.h; sourceTree = "<group>"; };
+		7A099D7619E9B85B009581E7 /* Ranimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ranimator.m; sourceTree = "<group>"; };
+		7A506FAC19E9DC1200BDF95D /* DynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicAnimator.h; sourceTree = "<group>"; };
+		7A506FAD19E9DC1200BDF95D /* DynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +96,13 @@
 				7A099D4E19E9ACB6009581E7 /* AppDelegate.m */,
 				7A099D5319E9ACB6009581E7 /* ViewController.h */,
 				7A099D5419E9ACB6009581E7 /* ViewController.m */,
+				7A506FAC19E9DC1200BDF95D /* DynamicAnimator.h */,
+				7A506FAD19E9DC1200BDF95D /* DynamicAnimator.m */,
+				7A099D7519E9B85B009581E7 /* Ranimator.h */,
+				7A099D7619E9B85B009581E7 /* Ranimator.m */,
 				7A099D5619E9ACB6009581E7 /* Main.storyboard */,
+				7A099D7219E9AD9D009581E7 /* MenuViewController.h */,
+				7A099D7319E9AD9D009581E7 /* MenuViewController.m */,
 				7A099D5919E9ACB6009581E7 /* Images.xcassets */,
 				7A099D5B19E9ACB6009581E7 /* LaunchScreen.xib */,
 				7A099D5019E9ACB6009581E7 /* CustomVCT.xcdatamodeld */,
@@ -226,6 +241,9 @@
 				7A099D4C19E9ACB6009581E7 /* main.m in Sources */,
 				7A099D5519E9ACB6009581E7 /* ViewController.m in Sources */,
 				7A099D5219E9ACB6009581E7 /* CustomVCT.xcdatamodeld in Sources */,
+				7A099D7419E9AD9D009581E7 /* MenuViewController.m in Sources */,
+				7A506FAE19E9DC1200BDF95D /* DynamicAnimator.m in Sources */,
+				7A099D7719E9B85B009581E7 /* Ranimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +434,7 @@
 				7A099D6E19E9ACB6009581E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A099D6F19E9ACB6009581E7 /* Build configuration list for PBXNativeTarget "CustomVCTTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				7A099D7119E9ACB6009581E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
